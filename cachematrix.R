@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## This fuction create a special matrix with some attributes
+## This fuction creates a special matrix with some attributes (or sub-functions).
+## In addition, you can get and set the matrix data using the following attributes: 
+##      get and set, respectively. 
+## Also, you can get and set the matrix inverse using the following attributes: 
+##      getinv and setinv, respectively. 
 
 makeCacheMatrix <- function(x = matrix()) {
         # my code here!
@@ -19,7 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## This function check if a matrix created by makeCacheMatrix has its inverse 
+## This function checks if a matrix created by makeCacheMatrix has its inverse (cached data).
+## if not, the matrix is gotten and then its inverse is calculated, and finally it is set by 'setinv'. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
